@@ -33,6 +33,4 @@ Desde la carpeta `docker/` ejecutar:
 
 ```bash
 docker build -t weather_nn .
-
-```bash
 docker run --rm weather_nn
