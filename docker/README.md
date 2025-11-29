@@ -19,9 +19,20 @@ El modelo fue entrenado en el notebook del proyecto utilizando datos previamente
 
 ---
 
+## Requisitos
+
+Tener instalado:
+
+- Docker
+
+---
+
 ## Construcción de la imagen
 
 Desde la carpeta `docker/` ejecutar:
 
 ```bash
 docker build -t weather_nn .
+
+```bash
+docker run --rm weather_nn
