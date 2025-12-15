@@ -17,7 +17,7 @@ with open("scaler.pkl", "rb") as f:
 with open("features.json", "r", encoding="utf-8") as f:
     features = json.load(f)
 print("Features cargadas")
-print(f"Cantidad de features esperadas: {len(features)}")
+print(f"Cantidad de features usadas: {len(features)}")
 
 #INPUT DUMMY
 data = {feat: 0 for feat in features}
@@ -39,7 +39,7 @@ else:
 
 
 # Predicción
-prob = model.predict(X_scaled)[0][0]
+prob = model.predict(X_scaled)[0][0] #primera prediccion
 pred = int(prob >= 0.3280) #umbral optimizado visto en desarrollo
 
 

@@ -2046,3 +2046,6 @@ information and possible workarounds, please see
                        min_samples_split=2, min_weight_fraction_leaf=0.0,
                        monotonic_cst=None, random_state=42, splitter='best')
 2025-12-15 14:14:09,741:INFO:compare_models() successfully completed......................................
+2025-12-15 14:21:02,894:WARNING:d:\Programas\anaconda3\envs\Python_ML\lib\site-packages\keras\src\layers\core\dense.py:95: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+
