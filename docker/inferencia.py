@@ -40,7 +40,7 @@ else:
 
 # Predicción
 prob = model.predict(X_scaled)[0][0]
-pred = int(prob >= 0.5)
+pred = int(prob >= 0.3280) #umbral optimizado visto en desarrollo
 
 
 # Resultado
